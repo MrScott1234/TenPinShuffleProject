@@ -30,7 +30,7 @@ def open_file():
         assets_str.set(file)
         print(assets_path)
 
-btn = Button(root, text ='Open', command = lambda:open_file())
+btn = Button(root, text ='Set Assets Folder Path...', command = lambda:open_file())
 btn.pack(side = TOP, pady = 10)
 
 Label(root, textvariable=assets_str).pack()
