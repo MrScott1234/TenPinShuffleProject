@@ -28,4 +28,5 @@ With the .APK now on your computer, simple open the archive in 7zip and extract 
 
 # Success!
 
-Now you should have a folder structure which contains all of the source files for the 10 Pin Shuffle Game.
+Now you should have a folder structure which contains all of the source files for the 10 Pin Shuffle Game, and you are ready to start playing around with it.
+Visit the documentation and modding information to get started: https://mrscott1234.github.io/TenPinShuffleProject/
