@@ -14,6 +14,8 @@ I gained a bit of interest in beefing up the graphics and textures in the game t
 To get started you'll need to grab the .APK file for 10 Pin Shuffle and extract the contents into a folder somewhere on your computer.
 This can be done quite easily with any off the shelf .APK extractor app on the Google Play store and a USB cable to transfer the file.
 
+Once all of that is done, you'll simply need to extract the contents using a program like 7zip.
+
 # Assets and File Documentation
 
 ###### DISCLAIMER: This is all speculation on my part purely based on educated guesses and is subject to change.
@@ -32,7 +34,7 @@ Texture files are very convienently stored as simple PNG and JPG files at quite 
 
 ![image](https://user-images.githubusercontent.com/97776260/149610441-7064d8bb-da35-4d6f-8742-267f0c385ac6.png)
 
-###### TODO: Figure out where some textures are stored, as I cannot find where the brick or ground wood texture is located
+###### NOTE: Some textures are embedded within the model data itself, and are NOT stored separately like this.
 
 ### Sound Files
 
@@ -72,7 +74,7 @@ Opening any of these files in a web browser will greet you with an unstyled web 
 
 
 
-# Currently Undocumented File Formats
+# Currently Undocumented or Partially Documented File Formats
 
 ### .16k, .16l, .16p, .16p2x Files
 
@@ -81,9 +83,51 @@ However, I'm not 100% sure, so I consider it undocumented.
 
 ![image](https://user-images.githubusercontent.com/97776260/149611069-7c863ff3-e05b-4a4a-ba39-827d6691c186.png)
 
-### .DSMDL Files
+### .DSMDL Model / Material Files
 
-I suspect these files contain geometry and material properties for the 3D objects in the game, but I do not yet know how these files are structured and how they actually store this data.
+DSMDL files contain information about the 3d geometry, material properties, and textures all in one similar to a GLTF file.
 
 ![image](https://user-images.githubusercontent.com/97776260/149611136-920d8bed-164a-43c3-9b61-89a7cc0ff472.png)
+
+The data in the file can be split up into several sections:
+
+#### The Header
+
+The header appears to consist of these characters:
+
+![image](https://user-images.githubusercontent.com/97776260/149614046-55b851ec-1fbb-494a-9df5-5e743fce4a85.png)
+
+
+#### Texture Data
+
+Delimited by the 4 bytes "TXTR", the bytes after appear to contain texture data. 
+What format the data is in and whether or not it is compressed is still unknown.
+
+![image](https://user-images.githubusercontent.com/97776260/149614034-591c3e1d-cb46-49b7-b046-dd5184eb94af.png)
+
+#### Material Data
+
+Near the end of the file is where the material data is stored; marked by the 4 bytes "MTLS":
+
+![image](https://user-images.githubusercontent.com/97776260/149614159-83348034-fa76-4770-a3ae-df16e9fabcda.png)
+
+#### Polygon Data
+
+Delimited by the 4 bytes "POLY", this is where the individual faces are; or more accurately which verticies they are attached to.
+
+![image](https://user-images.githubusercontent.com/97776260/149614402-04eb9cd4-e6a5-463b-9b6c-ac31756c96c0.png)
+
+#### Vertex Data
+
+Delimited bt the 4 bytes "NODE", this is where the vertex positions are located.
+
+![image](https://user-images.githubusercontent.com/97776260/149614424-e570ab08-53b0-4ec0-bdbf-129b388c405a.png)
+
+
+#### The END!
+
+At the very end of the file there are a few extra bytes that mark the end of the file:
+
+![image](https://user-images.githubusercontent.com/97776260/149614113-4f5f67bd-d017-4781-a543-68054b762f9c.png)
+
 
