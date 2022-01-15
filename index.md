@@ -2,14 +2,14 @@
 
 ![Bowling Icon@2x](https://user-images.githubusercontent.com/97776260/149610169-6ff8bb38-a2e8-406c-8827-28f94df16d72.png)
 
-### About
+## About
 
 10 Pin Shuffle is a popular mobile bowling game developed by Digital Smoke.
 I gained a bit of interest in beefing up the graphics and textures in the game to fit modern standards, so I decided to start this project in order to document and develop modding tools for this decades old mobile game.
 
 ###### Note: This is not documentation about gameplay, strategies, bugs, or the like. This documentation is strictly technical for the purposes of modding and understanding the technology used by the game.
 
-### Quick Start
+## Quick Start
 
 To get started you'll need to grab the .APK file for 10 Pin Shuffle and extract the contents into a folder somewhere on your computer.
 This can be done quite easily with any off the shelf .APK extractor app on the Google Play store and a USB cable to transfer the file.
@@ -20,7 +20,7 @@ Once all of that is done, you'll simply need to extract the contents using a pro
 
 ###### DISCLAIMER: This is all speculation on my part purely based on educated guesses and is subject to change.
 
-### The Basics
+## The Basics
 
 All of 10 Pin Shuffle's assets are located in the "assets" folder of the extracted source files.
 
@@ -28,7 +28,7 @@ All of 10 Pin Shuffle's assets are located in the "assets" folder of the extract
 
 The assets themselves are quite small in size, amounting to a total of only 26.4 MB.
 
-### Texture Files
+## Texture Files
 
 Texture files are very convienently stored as simple PNG and JPG files at quite low resolutions.
 
@@ -36,33 +36,33 @@ Texture files are very convienently stored as simple PNG and JPG files at quite 
 
 ###### NOTE: Some textures are embedded within the model data itself, and are NOT stored separately like this.
 
-### Sound Files
+## Sound Files
 
 Similar to the textures, sounds are stored as .WAV files.
 
 ![image](https://user-images.githubusercontent.com/97776260/149610872-f3581737-2304-46ab-9535-80ec339dcc17.png)
 
 
-### .S3E Files
+## .S3E Files
 
 In 10 Pin Shuffle and all apps made with the Marmalade SDK, a .S3E file exists. This is where I suspect all of the game code / logic is stored.
 
 ![image](https://user-images.githubusercontent.com/97776260/149611019-01e309c6-322f-4763-a419-e588e59b6a63.png)
 
-### .DSFNT Files
+## .DSFNT Files
 
 These files are the game's fonts.
 
 ![image](https://user-images.githubusercontent.com/97776260/149611099-06b95fa2-fa33-46e7-a26d-260b2bb1aec1.png)
 
-### .DSSTR Files
+## .DSSTR Files
 
 These files are responsible for language localization.
 
 ![image](https://user-images.githubusercontent.com/97776260/149611183-b00a95f5-d314-49f7-bd65-052e8e314cc9.png)
 
 
-# Game Tutorial Files
+## Game Tutorial Files
 
 10 Pin Shuffle stores the tutorials in separate html files for each language, and simply picks the one it needs based on the language and specific tutorial the player wants to read.
 
@@ -76,14 +76,14 @@ Opening any of these files in a web browser will greet you with an unstyled web 
 
 # Currently Undocumented or Partially Documented File Formats
 
-### .16k, .16l, .16p, .16p2x Files
+## .16k, .16l, .16p, .16p2x Files
 
 Judging by the names of the files, I suspect these files are responsible for handling different UI layouts / sizes for different devices.
 However, I'm not 100% sure, so I consider it undocumented.
 
 ![image](https://user-images.githubusercontent.com/97776260/149611069-7c863ff3-e05b-4a4a-ba39-827d6691c186.png)
 
-### .DSMDL Model / Material Files
+## .DSMDL Model / Material Files
 
 DSMDL files contain information about the 3d geometry, material properties, and textures all in one similar to a GLTF file.
 
@@ -119,14 +119,14 @@ Delimited by the 4 bytes "POLY", this is where the individual faces are; or more
 
 #### Vertex Data
 
-Delimited bt the 4 bytes "NODE", this is where the vertex positions are located.
+Delimited by the 4 bytes "NODE", this is where the vertex positions are located.
 
 ![image](https://user-images.githubusercontent.com/97776260/149614424-e570ab08-53b0-4ec0-bdbf-129b388c405a.png)
 
 
 #### The END!
 
-At the very end of the file there are a few extra bytes that mark the end of the file:
+At the very end of the file there are a few extra bytes that mark the end:
 
 ![image](https://user-images.githubusercontent.com/97776260/149614113-4f5f67bd-d017-4781-a543-68054b762f9c.png)
 
