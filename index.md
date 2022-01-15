@@ -9,15 +9,11 @@ I gained a bit of interest in beefing up the graphics and textures in the game t
 
 ### Quick Start
 
-To get started, head over to the Github page to learn how to get your hands on the source files of the game to start playing around with: https://github.com/MrScott1234/TenPinShuffleProject
-
-
-
+To get started, head over to the Github page and download the source files in the "pin_src" folder: https://github.com/MrScott1234/TenPinShuffleProject
 
 # Assets and File Documentation
 
 ###### DISCLAIMER: This is all speculation on my part purely based on educated guesses and is subject to change.
-
 
 ### The Basics
 
@@ -34,3 +30,9 @@ Texture files are very convienently stored as simple PNG and JPG files at quite 
 ![image](https://user-images.githubusercontent.com/97776260/149610441-7064d8bb-da35-4d6f-8742-267f0c385ac6.png)
 
 ###### TODO: Figure out where some textures are stored, as I cannot find where the brick or ground wood texture is located
+
+### Sound Files
+
+Similar to the textures, sounds are stored as .WAV files.
+
+![image](https://user-images.githubusercontent.com/97776260/149610872-f3581737-2304-46ab-9535-80ec339dcc17.png)
