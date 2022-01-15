@@ -11,7 +11,8 @@ I gained a bit of interest in beefing up the graphics and textures in the game t
 
 ### Quick Start
 
-To get started, head over to the Github page and download the source files in the "pin_src" folder: https://github.com/MrScott1234/TenPinShuffleProject
+To get started you'll need to grab the .APK file for 10 Pin Shuffle and extract the contents into a folder somewhere on your computer.
+This can be done quite easily with any off the shelf .APK extractor app on the Google Play store and a USB cable to transfer the file.
 
 # Assets and File Documentation
 
