@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# Welcome to the 10 Pin Shuffle Project!
 
-You can use the [editor on GitHub](https://github.com/MrScott1234/TenPinShuffleProject/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![Bowling Icon@2x](https://user-images.githubusercontent.com/97776260/149610169-6ff8bb38-a2e8-406c-8827-28f94df16d72.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### About
 
-### Markdown
+10 Pin Shuffle is a popular mobile bowling game developed by Digital Smoke.
+I gained a bit of interest in beefing up the graphics and textures in the game to fit modern standards, so I decided to start this project in order to document and develop modding tools for this decades old mobile game.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Quick Start
 
-```markdown
-Syntax highlighted code block
+To get started, head over to the Github page to learn how to get your hands on the source files of the game to start playing around with: https://github.com/MrScott1234/TenPinShuffleProject
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+# Assets and File Documentation
 
-[Link](url) and ![Image](src)
-```
+###### DISCLAIMER: This is all speculation on my part purely based on educated guesses and is subject to change.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+### The Basics
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MrScott1234/TenPinShuffleProject/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+All of 10 Pin Shuffle's assets are located in the "assets" folder of the extracted source files.
 
-### Support or Contact
+![image](https://user-images.githubusercontent.com/97776260/149610299-9cb0b07b-0fcd-45d4-b249-cd77c98c90c5.png)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+The assets themselves are quite small in size, amounting to a total of only 26.4 MB.
+
+### Texture Files
+
+Texture files are very convienently stored as simple PNG and JPG files at quite low resolutions.
+
+![image](https://user-images.githubusercontent.com/97776260/149610441-7064d8bb-da35-4d6f-8742-267f0c385ac6.png)
+
+###### TODO: Figure out where some textures are stored, as I cannot find where the brick or ground wood texture is located
