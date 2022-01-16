@@ -130,6 +130,8 @@ Delimited by the 4 bytes "NODE", this is where the vertex positions are located.
 
 At the very end of the file there are a few extra bytes that mark the end:
 
-![image](https://user-images.githubusercontent.com/97776260/149614113-4f5f67bd-d017-4781-a543-68054b762f9c.png)
+```markdown
+45 4E 44 21  |  END!
+```
 
 
