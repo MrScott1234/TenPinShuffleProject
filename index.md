@@ -34,11 +34,11 @@ Texture files are very convienently stored as simple PNG and JPG files at quite 
 
 ![image](https://user-images.githubusercontent.com/97776260/149610441-7064d8bb-da35-4d6f-8742-267f0c385ac6.png)
 
-###### NOTE: Some textures are embedded within the model data itself, and are NOT stored separately like this.
+###### NOTE: This does not include textures used for the 3D objects, as those are embedded in the 3D asset files directly.
 
 ## Sound Files
 
-Similar to the textures, sounds are stored as .WAV files.
+Similar to the textures, sounds are stored as .WAV files at a 22khz sample-rate.
 
 ![image](https://user-images.githubusercontent.com/97776260/149610872-f3581737-2304-46ab-9535-80ec339dcc17.png)
 
@@ -68,7 +68,8 @@ These files are responsible for language localization.
 
 ![image](https://user-images.githubusercontent.com/97776260/149611253-a8e66592-9ec0-4da8-ac37-6a699acdc839.png)
 
-Opening any of these files in a web browser will greet you with an unstyled web page, as the game appears to style the content itself.
+Taking a look at any of these files in a web browser will greet you with an unstyled web page. 
+Opening the instructions in the game will look identical, as it appears the game actually opens a web browser in-game.
 
 ![image](https://user-images.githubusercontent.com/97776260/149611283-e68f8f83-c9d2-4c23-9df7-140b8237a654.png)
 
@@ -93,10 +94,11 @@ The data in the file can be split up into several sections:
 
 #### The Header
 
-The header appears to consist of these characters:
+The header consists of the characters "DIGSMK3D....MTRX":
 
-![image](https://user-images.githubusercontent.com/97776260/149614046-55b851ec-1fbb-494a-9df5-5e743fce4a85.png)
-
+```markdown
+44 49 47 53 4D 4B 33 44 00 00 00 00 4D 54 52 58  |  DIGSMK3D....MTRX  
+```
 
 #### Texture Data
 
