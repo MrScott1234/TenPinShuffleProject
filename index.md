@@ -113,11 +113,13 @@ Near the end of the file is where the material data is stored; marked by the 4 b
 
 ![image](https://user-images.githubusercontent.com/97776260/149614159-83348034-fa76-4770-a3ae-df16e9fabcda.png)
 
-#### Polygon Data
+#### POLY Section
 
-Delimited by the 4 bytes "POLY", this is where the individual faces are; or more accurately which verticies they are attached to.
+I suspect this section is where the polygon data starts, but I'm not 100% sure.
 
-![image](https://user-images.githubusercontent.com/97776260/149614402-04eb9cd4-e6a5-463b-9b6c-ac31756c96c0.png)
+```markdown
+80 3F FF 64 00 00 50 4F 4C 59  |  €?ÿd..POLY
+```
 
 #### Vertex Data
 
