@@ -24,9 +24,24 @@ Next, you should be greeted with another window requesting a directory. This is 
 By default, the .APK does not have a signature, and therefore will not work on any device.
 To fix this, we will need to re-sign the .APK file, and it's why we deleted that META-INF file.
 
-I won't go into too much detail here, but this guide outlines a very easy method of signing your own .APKs.
+###### NOTE: You will need to install JDK 14.0.2 to get the jarsigner application needed to sign the APK
 
-http://www.androiddevelopment.org/2009/01/19/signing-an-android-application-for-real-life-mobile-device-usage-installation/
+In the repackaging folder, edit the "sign.bat" file; as we will need to make some changes to make it work.
+
+```markdown
+cd DIRECTORY_HERE
+"C:\Program Files\Java\jdk-14.0.2\bin\jarsigner" -verbose -keystore my-release-key.keystore "10_Pin_Shuffle_base.apk" alias_name
+```
+
+Specifically, we will need to change the DIRECTORY_HERE to be the folder that the APK is located in.
+
+###### NOTE: If you installed the JDK in a different location, you will need to change the location in the .bat file.
+
+After that, simply double click the file to sign it.
+You will be prompted to enter the keystore's password to continue.
+I've set the provided keystore password to "password".
+
+If you're using your own keystore, you will have to change the keystore file name and the alias_name in the .bat file.
 
 ### Step 4: Finished!
 
