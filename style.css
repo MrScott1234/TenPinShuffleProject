@@ -5,6 +5,8 @@
 }
 img {
   border-radius: 10px;
+  width: 50%;
+  box-shadow: 10px 10px 5px grey;
 }
 a:link {
   color: rgba(3, 127, 252, 1);
