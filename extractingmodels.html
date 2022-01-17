@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Extracting and Replacing Models (WIP)</title>
+
+<style>
+  pre code {
+    background-color: #ccc;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+  }
+  .container{
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 15px;
+  }
+</style>
+
+
+</head>
+<body style="width: 50%;">
+
+<div class="container">
+<a href="index.html"><- Back</a>
+</div>
+
+<h1>Extracting and Replacing Models (WIP)</h1>
+
+<hr>
+
+<div class="container">
+<p>
+The 3D assets in 10 Pin Shuffle are stored as .DSMDL files.
+These files contain all the data for the 3D asset including textures, materials, and geometry data.
+</p>
+</div>
+
+<h1>How 3D Asset Data is Stored in .DSMDL Files</h1>
+
+<hr>
+
+<div class="container">
+<p>
+3D Asset data begins after the bytes "ARRY°..."
+</p>
+
+<p>Sample data</p>
+
+<pre><code>
+FF FF 41 52 52 59 B0 17 00 00 00 70 24 3F 00 58  |  ÿÿARRY°....p$?.X
+31 C0 00 00 00 00 19 1F 72 3F 7B 4A A6 BE BD 37  |  1À......r?{J¦¾½7
+86 B5 04 58 0E 3F FF F5 3F C0 00 00 00 00 D5 76  |  †µ.X.?ÿõ?À....Õv
+</pre></code>
+</div>
+
+<p>&nbsp</p>
+
+<h1>Work In Progress 3D Model Viewer</h1>
+
+<hr>
+
+<div class="container">
+<img src="https://user-images.githubusercontent.com/97776260/149681129-bce67cda-e380-4075-86f8-40d896797524.png" width="50%"></img>
+
+<p>The current issues are the following:</p>
+
+<ul>
+ <li>Doesn't load polygon data</li>
+ <li>There appears to be an odd sphere model in the middle of all the models</li>
+ <li>Doesn't load texture and material data</li>
+</ul>
+</div>
+
+<p>&nbsp</p>
+
+<div class="container">
+<center><a href="basicstructure.html"><- Previous Page: Basic File and Asset Structure</a></center>
+</div>
+
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+
+</body>
+</html>
