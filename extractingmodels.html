@@ -9,17 +9,37 @@
     border: 1px solid #999;
     display: block;
     padding: 20px;
+    border-radius: 5px;
   }
   .container{
     background-color: #f0f0f0;
     padding: 15px;
     border-radius: 15px;
   }
+  img {
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px grey;
+  }
+  a:link {
+    color: rgba(3, 127, 252, 1);
+    background-color: rgba(3, 127, 252, 0.1);
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: rgba(173, 3, 252, 1);
+    background-color: rgba(173, 3, 252, 0.1);
+    text-decoration: none;
+  }
+  a {
+    padding: 3px;
+    border-radius: 5px;
+  }
 </style>
 
 
 </head>
-<body style="width: 50%;">
+<body style="width: 50%; font-family: Tahoma, sans-serif;">
 
 <div class="container">
 <a href="index.html"><- Back</a>
@@ -36,19 +56,18 @@ These files contain all the data for the 3D asset including textures, materials,
 </p>
 </div>
 
-<h1>How 3D Asset Data is Stored in .DSMDL Files</h1>
+<h2>How 3D Asset Data is Stored in .DSMDL Files</h2>
 
 <hr>
 
 <div class="container">
 <p>
-3D Asset data begins after the bytes "ARRY°..."
+3D Asset data begins after the bytes "ARRY"
 </p>
 
 <p>Sample data</p>
 
-<pre><code>
-FF FF 41 52 52 59 B0 17 00 00 00 70 24 3F 00 58  |  ÿÿARRY°....p$?.X
+<pre><code>FF FF 41 52 52 59 B0 17 00 00 00 70 24 3F 00 58  |  ÿÿARRY°....p$?.X
 31 C0 00 00 00 00 19 1F 72 3F 7B 4A A6 BE BD 37  |  1À......r?{J¦¾½7
 86 B5 04 58 0E 3F FF F5 3F C0 00 00 00 00 D5 76  |  †µ.X.?ÿõ?À....Õv
 </pre></code>
@@ -56,7 +75,7 @@ FF FF 41 52 52 59 B0 17 00 00 00 70 24 3F 00 58  |  ÿÿARRY°....p$?.X
 
 <p>&nbsp</p>
 
-<h1>Work In Progress 3D Model Viewer</h1>
+<h2>Work In Progress 3D Model Viewer</h2>
 
 <hr>
 
@@ -75,7 +94,18 @@ FF FF 41 52 52 59 B0 17 00 00 00 70 24 3F 00 58  |  ÿÿARRY°....p$?.X
 <p>&nbsp</p>
 
 <div class="container">
-<center><a href="basicstructure.html"><- Previous Page: Basic File and Asset Structure</a></center>
+<p>TODO:</p>
+<ul>
+ <li>Document how texture data is stored</li>
+ <li>Finish the model extractor program</li>
+ <li>Write documentation for inserting new 3D asset data</li>
+</ul>
+</div>
+
+<p>&nbsp</p>
+
+<div class="container">
+<center><p><a href="basicstructure.html"><- Previous Page: Basic File and Asset Structure</a></p></center>
 </div>
 
 <p>&nbsp</p>
